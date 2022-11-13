@@ -47,12 +47,13 @@
 
                     <span>Upload Excel</span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active ml-3">
                <form action="{{ route('logout') }}" method="post">
                     @csrf
                     <button class="btn btn-primary">
                     <span>Logout</span>
                     </button>
+               </form>
             </li>
 
         </ul>
@@ -116,7 +117,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Your Website 2022</span>
                     </div>
                 </div>
             </footer>

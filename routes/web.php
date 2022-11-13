@@ -16,7 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->get('/upload','App\Http\Controllers\back\IndexController@index')->name('back.uploadview');
 Route::middleware('auth')->post('/upload','App\Http\Controllers\back\IndexController@upload')->name('back.upload');
+Route::get('/', function () {
+    return redirect()->route('login');
+});
+
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
